@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>
+            Sortnetwork Check
+        </h1>
+        <div class="container">
+            <div class="container" name = "flex">
+                <p> Number Inputs: </p>
+                <input type="number" id="Inputs" name="Inputs" oninput="sizeChange()" size="200" value="3"><br><br>
+
+                <p> Depth: </p>
+                <input type="number" id="Depth" name="Depth" oninput="sizeChange()" size="200" value="4"><br><br>
+                
+                <button onclick="sizeChange()">ENTER/RESET</button>
+            </div>
+            <div class="container" >
+                <p> Connections </p>
+                <p id="connectors"></p><br>
+            </div>
+        </div>
+
+        <p id="result"></p>
+
+        <div class="sorting_network" id="sorting_network">
+            <canvas id="sort_canvas"></canvas>
+            <div class="connectorsRender" id="connectorsRender">
+            </div>
+        </div>
+    
+        <script src="Sort.js"></script>
+    </body>
+
+
+</html>
